@@ -1,0 +1,20 @@
+주요 파라미터
+
+Y_matrix		Y 행렬
+
+jacobian		자코비안 행렬
+
+PV_node_set	Slack을 포함한 PV 모선의 number 리스트
+
+PQ_node_set	PQ 모선의 number 리스트
+
+x_total_matrix	모든 노드에서의 세타값과 전압(0~23: 세타, 24~47: 전압)
+
+x_iteration_matrix	iteration에 사용되는 matrix(0~23: 세타, 24~ : PQ 버스에서의 전압 추측값(flat start일 때 1))
+
+F_total_matrix	모든 노드에서의 복소 전력(0~23: 유효 전력, 24~47: 무효전력)
+
+f_itertation_matrix	iteration에 사용되는 matrix(0~23: 유효 전력, 24~: PQ버스에서의 무효전력 given 값 - 추측값)
+
+Power_on_line	모든 line에 걸리는 복소 전력의 크기
+
